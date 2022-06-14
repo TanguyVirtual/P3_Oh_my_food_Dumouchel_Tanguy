@@ -9,11 +9,13 @@
 @import "./components/buttons";
 
 @import "./layout/header";
-@import "./layout/nav";
 @import "./layout/container";
 @import "./layout/form";
+@import "./layout/footer";
 
 
-@import "./pages/work";
-@import "./pages/about";
-@import "./pages/project";
+@import "./pages/_accueil";
+@import "./pages/_menu_a_la_française";
+@import "./pages/_menu_la_note_enchantee";
+@import "./pages/_menu_la_palette_du_gout";
+@import "./pages/_menu_le_delice_des_sens";
