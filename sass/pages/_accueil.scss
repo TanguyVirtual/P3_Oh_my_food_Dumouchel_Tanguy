@@ -1,10 +1,22 @@
-.la_palette_du_goût__image {
+.image {
   object-fit: cover;
-  width: 100%;
+  width: 300px;
   height: 120px;
   border-radius: 20px 20px 0 0;
 }
 
+.carte {
+  width: 80%;
+}
+
 .logo {
   font-family: "Shrikhand", cursive;
+}
+
+.localisation {
+  background-color: $color-mid-grey;
+}
+
+#restaurant {
+  background-color: $color-low-grey;
 }

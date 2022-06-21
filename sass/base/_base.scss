@@ -9,6 +9,9 @@
 $color-primary: #9356dc;
 $color-secondary: #ff79da;
 $color-accent: #99e2d0;
+$color-low-grey: rgb(246, 246, 246);
+$color-mid-grey: rgb(234, 234, 234);
+$color-high-grey: rgb(53, 53, 53);
 
 html {
   // 10px div by def of 16px
@@ -17,5 +20,4 @@ html {
 
 body {
   box-sizing: border-box;
-  background: $color-secondary;
 }
