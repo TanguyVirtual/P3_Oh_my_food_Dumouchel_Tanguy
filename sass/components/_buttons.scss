@@ -1,3 +1,28 @@
+@mixin btn-color-pink {
+  padding: 1.5rem;
+  background: $color-btn;
+  cursor: pointer;
+  border-radius: 100rem;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
 .btn {
-    @include btn
+  &__explorer__restaurant {
+    @include btn-color-pink;
+  }
+
+  &__commander {
+    @include btn-color-pink;
+  }
+
+  &__heart {
+    cursor: pointer;
+    color: $color-white;
+    text-shadow: 0 0 6px #000;
+  }
+
+  &__heart:hover {
+    color: $color-btn;
+  }
 }

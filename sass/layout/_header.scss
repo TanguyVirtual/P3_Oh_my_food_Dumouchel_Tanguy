@@ -1,12 +1,12 @@
 .header {
-  height: 10rem;
+  height: 2rem;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
   &__logo {
-    font-size: 7rem;
-    color: $colour-secondary;
+    font-family: "Shrikhand", cursive;
+    font-size: 5rem;
     margin-left: 10rem;
     @include heading-shadow($colour-white);
   }
