@@ -16,8 +16,45 @@ body {
 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
-  font-size: 5rem;
+  font-size: large;
   font-style: italic;
+}
+
+h2 {
+  font-size: medium;
+}
+
+p {
+  font-size: small;
+}
+
+article {
+  border-radius: 20px;
+  background-color: $color-white;
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.fonctionnement {
+  @include flex_column_center;
+}
+.fonctionnement ul {
+  list-style-type: none;
+}
+
+.fonctionnement a {
+  text-decoration: none;
+  list-style-type: none;
+  color: $color-black;
+}
+
+.fonctionnement i {
+  color: $color-fonctionnement-icons-no-hover;
+}
+
+.fonctionnement i:hover {
+  color: $color-fonctionnement-icons-with-hover;
 }
 
 textarea {

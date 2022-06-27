@@ -1,7 +1,5 @@
 .container {
-  margin: $layout-margin;
-  padding: $grid-gutter $grid-gutter 0 $grid-gutter;
-  @include border($colour-accent);
+  padding-top: 100px;
 }
 
 @mixin container__menu {
@@ -10,7 +8,9 @@
   background-color: $color-low-grey;
   position: relative;
   margin-top: 260px;
+  padding-bottom: 50px;
   width: 100%;
+  @include flex_center;
 }
 
 .container__menu {
