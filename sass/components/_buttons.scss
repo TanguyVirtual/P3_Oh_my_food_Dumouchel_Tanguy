@@ -1,10 +1,11 @@
 @mixin btn-color-pink {
   padding: 1.5rem;
-  background: $color-btn;
+  background: linear-gradient(350deg, $color-primary, $color-secondary);
   cursor: pointer;
   border-radius: 100rem;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   color: #fff;
+  border: none;
 }
 
 .btn {
@@ -18,13 +19,11 @@
 
   &__heart {
     cursor: pointer;
-    color: $color-white;
-    text-shadow: 0 0 6px #000;
-    padding-left: 250px;
-    margin-top: -50px;
-  }
-
-  &__heart:hover {
-    color: $color-btn;
+    color: $color-black;
+    background-color: $color-background_chiffres;
+    border: 3px;
+    /* text-shadow: 1.5px 0 0 #000, -1.5px 0 0 #000, 0 1.5px 0 #000,
+      0 -1.5px 0 #000; */
+    padding-left: 65px;
   }
 }
