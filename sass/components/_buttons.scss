@@ -6,24 +6,165 @@
   font-size: 1.5rem;
   color: #fff;
   border: none;
+  transition: all .2s ease-in-out;
+  box-shadow: 5px 5px 5px 1px #d6d4d4;
 }
 
 .btn {
   &__explorer__restaurant {
     @include btn-color-pink;
   }
+  &__commander_positionnement{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top: 35px;
+    padding-bottom: 35px;
+  }
 
   &__commander {
     @include btn-color-pink;
   }
 
+  &__commander:hover{
+    transform: scale(1.1);
+  }
+
   &__heart {
     cursor: pointer;
     color: $color-black;
-    background-color: $color-background_chiffres;
     border: 3px;
     /* text-shadow: 1.5px 0 0 #000, -1.5px 0 0 #000, 0 1.5px 0 #000,
       0 -1.5px 0 #000; */
-    padding-left: 65px;
+    margin-right: 55px;
+    position: relative;
+    & i {
+      position: absolute;
+    }
+
+    & .fas{
+     opacity: 0;
+     background: linear-gradient(350deg, $color-primary, $color-secondary);
+     background-clip: text;
+     -webkit-background-clip: text;
+     transform: scale(1.1);
+     color: transparent;
+    }
+
+    & .far{
+    opacity: 1;
+    }
+  }
+
+  &__explorer__restaurant:hover{
+    transform: scale(1.1);
+  }
+
+  &__heart:hover{
+
+    
+    & .fas{
+      opacity: 1;
+     }
+ 
+     & .far{
+     opacity: 0;
+     }
+  }
+
+  &__heart_à_la_française{
+    cursor: pointer;
+    color: $color-black;
+    border: 3px;
+    /* text-shadow: 1.5px 0 0 #000, -1.5px 0 0 #000, 0 1.5px 0 #000,
+      0 -1.5px 0 #000; */
+    padding-left: 130px;
+    position: relative;
+    & i {
+      position: absolute;
+    }
+
+    & .fas{
+     opacity: 0;
+     background: linear-gradient(350deg, $color-primary, $color-secondary);
+     background-clip: text;
+     -webkit-background-clip: text;
+     transform: scale(1.1);
+     color: transparent;
+    }
+
+    & .far{
+    opacity: 1;
+    }
+  }
+
+  &__explorer__restaurant:hover{
+    transform: scale(1.1);
+  }
+
+  &__heart_à_la_française:hover{
+
+    
+    & .fas{
+      opacity: 1;
+     }
+ 
+     & .far{
+     opacity: 0;
+     }
+  }
+
+  &__heart_accueil{
+    cursor: pointer;
+    color: $color-black;
+    border: 3px;
+    /* text-shadow: 1.5px 0 0 #000, -1.5px 0 0 #000, 0 1.5px 0 #000,
+      0 -1.5px 0 #000; */
+    padding-left: 85px;
+    position: relative;
+    & i {
+      position: absolute;
+    }
+
+    & .fas{
+     opacity: 0;
+     background: linear-gradient(350deg, $color-primary, $color-secondary);
+     background-clip: text;
+     -webkit-background-clip: text;
+     transform: scale(1.1);
+     color: transparent;
+    }
+
+    & .far{
+    opacity: 1;
+    }
+  }
+
+  &__explorer__restaurant:hover{
+    transform: scale(1.1);
+  }
+
+  &__heart_accueil:hover{
+
+    
+    & .fas{
+      opacity: 1;
+     }
+ 
+     & .far{
+     opacity: 0;
+     }
   }
 }
+
+.titre_restaurant .btn__heart{
+  padding-top: 20px;
+  font-size: 3rem;
+}
+
+.btn__heart_à_la_française_titre_restaurant{
+  padding-top: 20px;
+  font-size: 3rem;
+}
+
+

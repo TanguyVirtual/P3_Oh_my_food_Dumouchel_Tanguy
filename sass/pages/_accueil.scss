@@ -16,15 +16,36 @@
   padding-bottom: 15px;
 }
 
-.localisation h2 {
+.localisation h3 {
   padding-left: 25px;
-  font-size: 20px;
+  font-size: 1.5rem;
   font-style: italic;
   color: $color-high-grey;
 }
 
 .localisation i {
   color: $color-high-grey;
+}
+
+.background_new_text{
+  background-color: $color-back-new-text;
+  border-radius: 2px; 
+  font-weight: bold;
+  width: 80px;
+  height: 30px;
+  position: absolute;
+  top: 15px;
+  left:205px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.new_text{
+  color:$color-new-text;
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 0;
 }
 
 .reserver {
@@ -66,10 +87,21 @@ p {
   margin-bottom: 20px;
   padding: 20px;
   box-shadow: 5px 5px 5px 1px #ebe7e7;
+  width: 300px;
+  height: 70px;
 }
 
 .fonctionnement_liste h1 {
   cursor: pointer;
+}
+
+.fonctionnement_liste:hover{
+  transform: scale(1.1);
+  background: $color-background-hover-fonctionnement;
+}
+
+.fonctionnement_text{
+  font-size: 1.7rem;
 }
 
 .chiffres {
@@ -109,6 +141,11 @@ p {
   height: 215px;
   margin-bottom: 50px;
   box-shadow: 5px 5px 5px 1px #ebe7e7;
+  position: relative;
+}
+
+.la_palette_du_goût_carte:hover{
+  transform: scale(1.1);
 }
 
 .la_note_enchantee_carte {
@@ -118,6 +155,11 @@ p {
   height: 215px;
   margin-bottom: 50px;
   box-shadow: 5px 5px 5px 1px #ebe7e7;
+  position: relative;
+}
+
+.la_note_enchantee_carte:hover{
+  transform: scale(1.1);
 }
 
 .a_la_française_carte {
@@ -127,6 +169,11 @@ p {
   height: 215px;
   margin-bottom: 50px;
   box-shadow: 5px 5px 5px 1px #ebe7e7;
+  position: relative;
+}
+
+.a_la_française_carte:hover{
+  transform: scale(1.1);
 }
 
 .le_délice_des_sens_carte {
@@ -136,4 +183,9 @@ p {
   height: 215px;
   margin-bottom: 50px;
   box-shadow: 5px 5px 5px 1px #ebe7e7;
+  position: relative;
+}
+
+.le_délice_des_sens_carte:hover{
+  transform: scale(1.1);
 }

@@ -11,7 +11,15 @@ body {
 }
 
 .titre_restaurant {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.titre_restaurant h2{
   font-family: "Shrikhand", cursive;
+  font-size: 4rem;
+  padding-left: 35px;
 }
 
 h1 {
@@ -21,12 +29,23 @@ h1 {
   font-style: italic;
 }
 
-h2 {
-  font-size: medium;
+.container_accueil h2 {
+  font-size: 2.2rem;
+  font-weight: 900;
 }
 
-p {
-  font-size: small;
+.container_accueil h3 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.container_accueil p {
+  font-size: 1.7rem;
+
+}
+
+.citation{
+  color: $color-high-grey;
 }
 
 article {
@@ -35,6 +54,12 @@ article {
   margin-top: 25px;
   margin-left: 25px;
   margin-right: 25px;
+  box-shadow: 5px 5px 5px 1px #ebe7e7;
+  width: 482px;
+}
+
+article:hover {
+    transform: scale(1.1);
 }
 
 .fonctionnement {
@@ -71,8 +96,14 @@ button {
 }
 
 .back_icon {
-  padding-left: -200px;
   color: $color-high-grey;
+  display: flex;
+  flex-direction: row;
+  align-items:flex-start;
+  padding-top: 25px;
+  position: absolute;
+  top:10px;
+  left: 20px;
 }
 
 .image_menu_restaurant {
@@ -80,3 +111,119 @@ button {
   width: 100%;
   height: 220px;
 }
+
+
+.entree article{
+  position: relative;
+}
+
+.entree h3{
+    border-top: none;
+    border-bottom: 3.5px solid;
+    border-color: $color-back-new-text;
+    width: 45px;
+    margin-left: 30px;
+    font-weight:300;
+    font-size: 2rem;
+}
+
+.entree h4{
+  font-weight: bolder;
+  font-size: 2rem;
+  font-style: italic;
+  margin-left: 20px;
+}
+
+.entree p{
+  font-size: 1.5rem;
+  margin-left: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 218px;
+}
+
+.entree span{
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: $color-high-grey;
+  margin-right: 25px;
+}
+
+.entree__postionnement_texte{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.plats h3{
+  border-top: none;
+  border-bottom: 3.5px solid;
+  border-color: $color-back-new-text;
+  width: 45px;
+  margin-left: 30px;
+  padding-top: 20px;
+  font-weight:300;
+  font-size: 2rem;
+}
+
+.plats h4{
+  font-weight: bolder;
+  font-size: 2rem;
+  font-style: italic;
+  margin-left: 20px;
+}
+
+.plats p{
+  font-size: 1.5rem;
+  margin-left: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 269px;
+}
+
+.plats span{
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: $color-high-grey;
+  margin-right: 25px;
+}
+
+.desserts h3{
+  border-top: none;
+  border-bottom: 3.5px solid;
+  border-color: $color-back-new-text;
+  width: 45px;
+  margin-left: 30px;
+  padding-top: 20px;
+  font-weight:300;
+  font-size: 2rem;
+}
+
+.desserts h4{
+  font-weight: bolder;
+  font-size: 2rem;
+  font-style: italic;
+  margin-left: 20px;
+}
+  
+.desserts p{
+  font-size: 1.5rem;
+  margin-left: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 269px;
+}
+  
+.desserts span{
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: $color-high-grey;
+  margin-right: 25px;
+}
+
