@@ -122,7 +122,6 @@ article {
   margin-right: 25px;
   box-shadow: 5px 5px 5px 1px #ebe7e7;
   width: 482px;
-  transform: scale(1);
   transition: transform 400ms;
   display: flex;
   flex-direction: row;
@@ -133,7 +132,7 @@ article:hover {
     transform: scale(1.2);
     box-shadow: 5px 5px 5px 1px #c4c3c3;
     & .box{
-      transform: scaleX(1);
+      margin-right: 0;
     }
     & .icone_box{
       transform: rotate(0deg);
@@ -158,9 +157,8 @@ width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform-origin: right;
-  transform: scaleX(0);
-  transition: transform 500ms cubic-bezier(.54,.4,.86,.65);
+  margin-right: -100px;
+  transition: margin-right 500ms cubic-bezier(.54,.4,.86,.65);
 }
 
 .icone_box{
@@ -237,7 +235,7 @@ article{
   animation-fill-mode: both;
   @for $i from 1 through 3 {
     &:nth-child(#{$i}){
-      animation-delay: 100ms * $i;
+      animation-delay: 1.5s + 100ms * $i;
     }
   }
 }
@@ -277,7 +275,7 @@ article{
   font-size: 1.5rem;
   font-style: italic;
   color: $color-high-grey;
-  margin-right: -62px;
+  margin-right: 10px;
 }
 
 .entree__postionnement_texte{
@@ -318,7 +316,7 @@ justify-content: space-between;
   font-size: 1.5rem;
   font-style: italic;
   color: $color-high-grey;
-  margin-right: -62px;
+  margin-right: 10px;
 }
 
 .desserts h3{
@@ -353,7 +351,7 @@ justify-content: space-between;
   font-size: 1.5rem;
   font-style: italic;
   color: $color-high-grey;
-  margin-right: -62px;
+  margin-right: 10px;
 }
 
 @media screen and (min-width: 1024px)
