@@ -54,18 +54,18 @@
 
 .titre_restaurants {
   padding-right: 170px;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   font-size: x-large;
 }
 
-#restaurant {
+#restaurant_block {
   background-color: $color-low-grey;
   padding-top: 35px;
   padding-bottom: 50px;
   @include flex_column_center;
 }
 
-.block_restaurant {
+.sous_block_restaurant {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -89,6 +89,8 @@ p {
   box-shadow: 5px 5px 5px 1px #ebe7e7;
   width: 300px;
   height: 70px;
+  transform: scale(1);
+  transition: transform 400ms;
 }
 
 .fonctionnement_liste h1 {
@@ -96,8 +98,12 @@ p {
 }
 
 .fonctionnement_liste:hover{
-  transform: scale(1.1);
+  transform: scale(1.2);
   background: $color-background-hover-fonctionnement;
+  .icone_fonctionnement {
+    color: $color-background_chiffres;
+  }
+  box-shadow: 5px 5px 5px 1px #c4c3c3;
 }
 
 .fonctionnement_text{
@@ -126,10 +132,6 @@ p {
   cursor: pointer;
 }
 
-.icone_fonctionnement:hover {
-  color: $color-background_chiffres;
-}
-
 .restaurant_sous_titre {
   padding-left: 12px;
 }
@@ -142,10 +144,13 @@ p {
   margin-bottom: 50px;
   box-shadow: 5px 5px 5px 1px #ebe7e7;
   position: relative;
+  transform: scale(1);
+  transition: transform 400ms;
 }
 
 .la_palette_du_goût_carte:hover{
-  transform: scale(1.1);
+  transform: scale(1.2);
+  box-shadow: 5px 5px 5px 1px #c4c3c3;
 }
 
 .la_note_enchantee_carte {
@@ -156,10 +161,13 @@ p {
   margin-bottom: 50px;
   box-shadow: 5px 5px 5px 1px #ebe7e7;
   position: relative;
+  transform: scale(1);
+  transition: transform 400ms;
 }
 
 .la_note_enchantee_carte:hover{
-  transform: scale(1.1);
+  transform: scale(1.2);
+  box-shadow: 5px 5px 5px 1px #c4c3c3;
 }
 
 .a_la_française_carte {
@@ -170,10 +178,13 @@ p {
   margin-bottom: 50px;
   box-shadow: 5px 5px 5px 1px #ebe7e7;
   position: relative;
+  transform: scale(1);
+  transition: transform 400ms;
 }
 
 .a_la_française_carte:hover{
-  transform: scale(1.1);
+  transform: scale(1.2);
+  box-shadow: 5px 5px 5px 1px #c4c3c3;
 }
 
 .le_délice_des_sens_carte {
@@ -184,8 +195,70 @@ p {
   margin-bottom: 50px;
   box-shadow: 5px 5px 5px 1px #ebe7e7;
   position: relative;
+  transform: scale(1);
+  transition: transform 400ms;
 }
 
 .le_délice_des_sens_carte:hover{
-  transform: scale(1.1);
+  transform: scale(1.2);
+  box-shadow: 5px 5px 5px 1px #c4c3c3;
+}
+
+.titre_fonctionnement
+{
+  padding-left: 350px;
+  padding-bottom: 20px;
+}
+
+.fonctionnement_block
+{
+  padding-top: 35px;
+}
+
+@media screen and (min-width: 1024px)
+
+{
+
+  .titre_fonctionnement
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .fonctionnement
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+
+  .fonctionnement_liste
+  {
+    margin: 0;
+  }
+
+  .titre_restaurants
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .restaurant
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 100px;
+    gap: 50px;
+  }
+
+
 }

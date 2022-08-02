@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -30,6 +34,12 @@
     </header>
 
     <main class="container_accueil">
+
+      <div class="loader">
+        <div class="dot d1"></div>
+        <div class="dot d2"></div>
+        <div class="dot d3"></div>
+      </div>
       <div class="localisation">
         <i class="fas fa-map-marker-alt"></i>
         <h3>Paris, Belleville</h3>
@@ -44,9 +54,13 @@
           class="btn__explorer__restaurant">Explorer nos restaurants</button>
       </div>
 
-      <div class="fonctionnement">
+      <div class="fonctionnement_block">
         <ul>
+          <li class="titre_fonctionnement">
           <h2>Fonctionnement</h2>
+          </li>
+
+        <menu class="fonctionnement">
 
           <li class="fonctionnement_liste">
               <p class="chiffres">1</p>
@@ -67,11 +81,15 @@
           <p class="fonctionnement_text">Dégustez au restaurant</p>
       </li>
 
+    </menu>
         </ul>
       </div>
 
-      <section id="restaurant">
-        <h2 class="titre_restaurants">Restaurants</h2>
+      <section id="restaurant_block">
+        <div  class="titre_restaurants">
+        <h2>Restaurants</h2>
+      </div>
+        <div class="restaurant">
         <div
           class="la_palette_du_goût_carte"
           onclick="location.href='menu_la_palette_du_gout.html'"
@@ -84,7 +102,7 @@
         <div class="background_new_text">
           <p class="new_text">Nouveau</p>
         </div>
-        <div class="block_restaurant">
+        <div class="sous_block_restaurant">
           <div class="restaurant_sous_titre">
             <h3 class="la_palette_du_goût__heading">La palette du goût</h3>
             <p class="la_palette_du_goût__byline">Ménilmontant</p>
@@ -107,7 +125,7 @@
           <div class="background_new_text">
             <p class="new_text">Nouveau</p>
           </div>
-          <div class="block_restaurant">
+          <div class="sous_block_restaurant">
           <div class="restaurant_sous_titre">
             <h3 class="la_note_enchantee__heading">La note enchantée</h3>
             <p class="la_note_enchantee__byline">Charonne</p>
@@ -133,7 +151,7 @@
           src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
           alt=" photo restaurant À la française"
         />
-        <div class="block_restaurant">
+        <div class="sous_block_restaurant">
         <div class="restaurant_sous_titre">
           <h3 class="a_la_française__heading">À la française</h3>
           <p class="a_la_française__byline">Cité Rouge</p>
@@ -154,7 +172,7 @@
             src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
             alt=" photo restaurant Le délice des sens"
           />
-          <div class="block_restaurant">
+          <div class="sous_block_restaurant">
           <div class="restaurant_sous_titre">
             <h3 class="le_délice_des_sens__heading">Le délice des sens</h3>
             <p class="le_délice_des_sens__byline">Folie-Méricourt</p>
@@ -165,12 +183,13 @@
             </div>
         </div>
         </div>
+      </div>
       </section>
     </main>
 
     <footer>
       <ul>
-        <h2 class="footer__logo">ohmyfood</h2>
+        <li class="footer__logo">ohmyfood</li>
         <li>
           <i class="fas fa-utensils"></i
           ><a class="text_decoration_none" href="#"> Proposer un restaurant</a>
@@ -180,7 +199,7 @@
           ><a class="text_decoration_none" href="#"> Devenir partenaire</a>
         </li>
         <li><a class="text_decoration_none" href="#">Mention légales</a></li>
-        <li><a class="text_decoration_none" href="#">Conctact</a></li>
+        <li><a class="text_decoration_none" href="mailto:contact@ohmyfood.com?subject=Merci de mettre un objet associé à votre mail&body=Écrivez ici votre requête">Contact</a></li>
       </ul>
     </footer>
   </body>

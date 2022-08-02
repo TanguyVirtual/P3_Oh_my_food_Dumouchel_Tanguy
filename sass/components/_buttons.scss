@@ -13,6 +13,8 @@
 .btn {
   &__explorer__restaurant {
     @include btn-color-pink;
+    transform: scale(1);
+    transition: transform 400ms;
   }
   &__commander_positionnement{
     display: flex;
@@ -24,10 +26,14 @@
 
   &__commander {
     @include btn-color-pink;
+    transform: scale(1);
+    transition: transform 400ms;
   }
 
   &__commander:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
+    box-shadow: 5px 5px 5px 1px #c4c3c3;
+    background: linear-gradient(350deg, $color-primary-lighter, $color-secondary-lighter);
   }
 
   &__heart {
@@ -47,24 +53,29 @@
      background: linear-gradient(350deg, $color-primary, $color-secondary);
      background-clip: text;
      -webkit-background-clip: text;
-     transform: scale(1.1);
      color: transparent;
+     transform: scale(1);
+     transition: transform 2000ms, opacity 2000ms ;
     }
 
     & .far{
     opacity: 1;
+    transition: transform 2000ms, opacity 2000ms ; 
     }
   }
 
   &__explorer__restaurant:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
+    box-shadow: 5px 5px 5px 1px #c4c3c3;
+    background: linear-gradient(350deg, $color-primary-lighter, $color-secondary-lighter);
   }
 
   &__heart:hover{
 
-    
     & .fas{
       opacity: 1;
+      transform: scale(1.2);
+      
      }
  
      & .far{
@@ -72,13 +83,13 @@
      }
   }
 
-  &__heart_à_la_française{
+  &__heart_à_la_française {
     cursor: pointer;
     color: $color-black;
     border: 3px;
     /* text-shadow: 1.5px 0 0 #000, -1.5px 0 0 #000, 0 1.5px 0 #000,
       0 -1.5px 0 #000; */
-    padding-left: 130px;
+    margin-left: 130px;
     position: relative;
     & i {
       position: absolute;
@@ -89,24 +100,24 @@
      background: linear-gradient(350deg, $color-primary, $color-secondary);
      background-clip: text;
      -webkit-background-clip: text;
-     transform: scale(1.1);
      color: transparent;
+     transform: scale(1);
+     transition: transform 2000ms, opacity 2000ms ;
     }
 
     & .far{
     opacity: 1;
+    transition: transform 2000ms, opacity 2000ms ; 
     }
   }
 
-  &__explorer__restaurant:hover{
-    transform: scale(1.1);
-  }
 
   &__heart_à_la_française:hover{
 
     
     & .fas{
       opacity: 1;
+      transform: scale(1.2);
      }
  
      & .far{
@@ -131,24 +142,29 @@
      background: linear-gradient(350deg, $color-primary, $color-secondary);
      background-clip: text;
      -webkit-background-clip: text;
-     transform: scale(1.1);
      color: transparent;
+     transform: scale(1);
+     transition: transform 2000ms, opacity 2000ms ;
     }
 
     & .far{
     opacity: 1;
+    transition: transform 2000ms, opacity 2000ms ; 
     }
   }
 
   &__explorer__restaurant:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
+    box-shadow: 5px 5px 5px 1px #c4c3c3;
+    background: linear-gradient(350deg, $color-primary-lighter, $color-secondary-lighter);
   }
 
   &__heart_accueil:hover{
 
-    
+
     & .fas{
-      opacity: 1;
+      opacity: 1; 
+      transform: scale(1.2);
      }
  
      & .far{

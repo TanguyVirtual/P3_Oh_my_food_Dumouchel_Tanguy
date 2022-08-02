@@ -48,6 +48,72 @@ h1 {
   color: $color-high-grey;
 }
 
+.loader{
+  position: fixed;
+  inset:0;
+  z-index: 1;
+  opacity: 0.9;
+  background: $color-white;
+  background-color: $color-white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease-in-out;
+  animation: disappear 100ms 1.5s forwards;
+  transform-origin: top;
+}
+
+@keyframes disappear{
+    0%{
+      transform: scale(1);
+    }
+    100%{
+      transform: scale(0);
+    }
+}
+
+@keyframes transform_menu_items{
+  0%{
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.dot{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 15px;
+  animation: loader infinite 0.3s alternate;
+}
+
+.d1{
+  background-color: $color-primary;
+}
+
+.d2 {
+  animation-delay: 0.05s;
+  background-color: $color-secondary;
+}
+
+.d3 {
+  animation-delay: 0.1s;
+  background-color: $color-btn;
+}
+
+
+@keyframes loader {
+  100% {
+    transform: translateY(-30px);
+  } 
+}
+
 article {
   border-radius: 20px;
   background-color: $color-white;
@@ -56,10 +122,61 @@ article {
   margin-right: 25px;
   box-shadow: 5px 5px 5px 1px #ebe7e7;
   width: 482px;
+  transform: scale(1);
+  transition: transform 400ms;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
 }
 
 article:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
+    box-shadow: 5px 5px 5px 1px #c4c3c3;
+    & .box{
+      transform: scaleX(1);
+    }
+    & .icone_box{
+      transform: rotate(0deg);
+    }
+    & .carte_prix{
+      margin-right: 10px;
+    }
+}
+
+
+.block_texte{
+width: 100%;
+}
+
+.box {
+  background-color: $color-back-new-text;
+  width: 100px;
+  height: 75px;
+  opacity: 1;
+  border-top-right-radius: 20px ;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 500ms cubic-bezier(.54,.4,.86,.65);
+}
+
+.icone_box{
+  color: $color-white;
+  transition: transform 500ms cubic-bezier(.54,.4,.86,.65);
+  transform:rotate(360deg)
+}
+
+.prix:hover .box{
+    display: block;
+    transform-origin: right 50%;
+}
+
+@keyframes slide {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
 }
 
 .fonctionnement {
@@ -99,11 +216,14 @@ button {
   color: $color-high-grey;
   display: flex;
   flex-direction: row;
-  align-items:flex-start;
+  align-items: center;
   padding-top: 25px;
   position: absolute;
-  top:10px;
   left: 20px;
+}
+
+.back_icon:hover{
+  transform: scale(1.2);
 }
 
 .image_menu_restaurant {
@@ -112,6 +232,15 @@ button {
   height: 220px;
 }
 
+article{
+  animation: transform_menu_items 1s;
+  animation-fill-mode: both;
+  @for $i from 1 through 3 {
+    &:nth-child(#{$i}){
+      animation-delay: 100ms * $i;
+    }
+  }
+}
 
 .entree article{
   position: relative;
@@ -148,7 +277,7 @@ button {
   font-size: 1.5rem;
   font-style: italic;
   color: $color-high-grey;
-  margin-right: 25px;
+  margin-right: -62px;
 }
 
 .entree__postionnement_texte{
@@ -189,7 +318,7 @@ justify-content: space-between;
   font-size: 1.5rem;
   font-style: italic;
   color: $color-high-grey;
-  margin-right: 25px;
+  margin-right: -62px;
 }
 
 .desserts h3{
@@ -224,6 +353,46 @@ justify-content: space-between;
   font-size: 1.5rem;
   font-style: italic;
   color: $color-high-grey;
-  margin-right: 25px;
+  margin-right: -62px;
+}
+
+@media screen and (min-width: 1024px)
+
+{
+
+  .entree_positionnement_1
+  {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+  }
+
+  .entree_positionnement_2
+  {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+  }
+
+  .entree_positionnement
+  {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+  }
+
+  .plats_positionnement
+  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   }
+
+   .desserts_positionnement
+   {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   }
 }
 
