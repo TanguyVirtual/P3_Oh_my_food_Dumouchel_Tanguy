@@ -46,6 +46,10 @@ h1 {
 
 .citation{
   color: $color-high-grey;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .loader{
@@ -118,10 +122,10 @@ article {
   border-radius: 20px;
   background-color: $color-white;
   margin-top: 25px;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 5px 5px 5px 1px #ebe7e7;
-  width: 482px;
+  width: 90%;
   transition: transform 400ms;
   display: flex;
   flex-direction: row;
@@ -259,6 +263,10 @@ article{
   font-size: 2rem;
   font-style: italic;
   margin-left: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 220px;
 }
 
 .entree p{
@@ -300,6 +308,10 @@ justify-content: space-between;
   font-size: 2rem;
   font-style: italic;
   margin-left: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 220px;
 }
 
 .plats p{
@@ -335,6 +347,10 @@ justify-content: space-between;
   font-size: 2rem;
   font-style: italic;
   margin-left: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 220px;
 }
   
 .desserts p{
@@ -357,6 +373,9 @@ justify-content: space-between;
 @media screen and (min-width: 1024px)
 
 {
+  article {
+    width: 482px;
+  }
 
   .entree_positionnement_1
   {

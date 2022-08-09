@@ -56,6 +56,10 @@
   padding-right: 170px;
   padding-bottom: 20px;
   font-size: x-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 
 #restaurant_block {
@@ -206,8 +210,8 @@ p {
 
 .titre_fonctionnement
 {
-  padding-left: 350px;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 .fonctionnement_block
@@ -241,14 +245,6 @@ p {
   .fonctionnement_liste
   {
     margin: 0;
-  }
-
-  .titre_restaurants
-  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
   }
 
   .restaurant
