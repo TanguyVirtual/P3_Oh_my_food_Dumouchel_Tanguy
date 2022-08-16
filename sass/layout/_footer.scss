@@ -2,6 +2,7 @@ footer {
   background-color: $color-high-grey;
   padding-top: 20px;
   padding-left: 20px;
+  padding-bottom: 65px;
 }
 
 footer a {
@@ -17,6 +18,11 @@ footer i {
 footer ul {
   margin-left: 15px;
   list-style-type: none;
+  padding-top: 25px;
+}
+
+footer li {
+ width: fit-content;
 }
 
 .footer__logo {
@@ -24,3 +30,4 @@ footer ul {
   color: $color-white;
   font-size: x-large;
 }
+

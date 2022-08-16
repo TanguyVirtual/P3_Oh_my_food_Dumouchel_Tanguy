@@ -16,10 +16,13 @@ body {
   justify-content: space-between;
 }
 
-.titre_restaurant h2{
-  font-family: "Shrikhand", cursive;
-  font-size: 4rem;
+.titre_restaurant h2 {
+  font-family: "Shrikhand",cursive;
+  font-size: 3rem;
   padding-left: 35px;
+  align-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 h1 {
@@ -124,7 +127,6 @@ article {
   margin-top: 25px;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 15px;
   box-shadow: 5px 5px 5px 1px #ebe7e7;
   width: 90%;
   transition: transform 400ms;
@@ -136,6 +138,7 @@ article {
 article:hover {
     transform: scale(1.2);
     box-shadow: 5px 5px 5px 1px #c4c3c3;
+    cursor: pointer;
     & .box{
       margin-right: 0;
     }
@@ -154,7 +157,7 @@ width: 100%;
 
 .box {
   background-color: $color-back-new-text;
-  width: 100px;
+  width: 44px;
   height: 75px;
   opacity: 1;
   border-top-right-radius: 20px ;
@@ -162,7 +165,7 @@ width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: -100px;
+  margin-right: -90px;
   transition: margin-right 500ms cubic-bezier(.54,.4,.86,.65);
 }
 
@@ -223,6 +226,7 @@ button {
   padding-top: 25px;
   position: absolute;
   left: 20px;
+  cursor: pointer;
 }
 
 .back_icon:hover{
@@ -267,7 +271,7 @@ article{
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: 220px;
+  width: 195px;
 }
 
 .entree p{
@@ -276,7 +280,7 @@ article{
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: 218px;
+  width: 125px;
 }
 
 .entree span{
@@ -312,7 +316,7 @@ justify-content: space-between;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: 220px;
+  width: 195px;
 }
 
 .plats p{
@@ -321,7 +325,7 @@ justify-content: space-between;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: 269px;
+  width: 125px;
 }
 
 .plats span{
@@ -351,7 +355,7 @@ justify-content: space-between;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: 220px;
+  width: 195px;
 }
   
 .desserts p{
@@ -360,7 +364,7 @@ justify-content: space-between;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  width: 269px;
+  width: 125px;
 }
   
 .desserts span{
@@ -371,45 +375,126 @@ justify-content: space-between;
   margin-right: 10px;
 }
 
+@media screen and (min-width: 610px)
+
+{
+
+.titre_restaurant h2 {
+  font-family: "Shrikhand",cursive;
+  font-size: 4rem;
+  padding-left: 35px;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+}
+
 @media screen and (min-width: 1024px)
 
 {
   article {
     width: 482px;
   }
+  .menu_restaurant{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .entree{
+    padding-top: 20px;
+    padding-right: 50px;
+  }
 
   .entree_positionnement_1
   {
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    justify-content: center;
   }
 
   .entree_positionnement_2
   {
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    justify-content: center;
   }
 
   .entree_positionnement
   {
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    align-items: center;
+  }
+
+  .entree h4{
+    font-weight: bolder;
+    font-size: 2rem;
+    font-style: italic;
+    margin-left: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 300px;
+  }
+
+  .entree p{
+      margin-left: 20px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 242px;
+    }
+
+    .plats h4{
+      font-weight: bolder;
+      font-size: 2rem;
+      font-style: italic;
+      margin-left: 20px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 300px;
+    }
+  
+    .plats p{
+      margin-left: 20px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 300px;
+    }
+
+  .desserts h4{
+    font-weight: bolder;
+    font-size: 2rem;
+    font-style: italic;
+    margin-left: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 272px;
+  }
+
+  .desserts p{
+    margin-left: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 252px;
   }
 
   .plats_positionnement
   {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
    }
 
    .desserts_positionnement
    {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
    }
 }
