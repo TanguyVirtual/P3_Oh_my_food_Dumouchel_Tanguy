@@ -2,7 +2,7 @@ footer {
   background-color: $color-high-grey;
   padding-top: 20px;
   padding-left: 20px;
-  padding-bottom: 65px;
+  padding-bottom: 66px;
 }
 
 footer a {
@@ -31,3 +31,13 @@ footer li {
   font-size: x-large;
 }
 
+
+@media screen and (min-width: 1280px)
+{
+  footer {
+    background-color: $color-high-grey;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 72px;
+  }
+}

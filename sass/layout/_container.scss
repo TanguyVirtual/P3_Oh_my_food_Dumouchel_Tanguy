@@ -30,3 +30,36 @@
     @include container__menu;
   }
 }
+
+
+@media screen and (min-width: 768px)
+{
+    @mixin container__menu {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      background-color: $color-low-grey;
+      position: relative;
+      margin-top: 260px;
+      padding-bottom: 69px;
+      width: 100%;
+      @include flex_center;
+    }
+
+    .container__menu {
+      &__a__la__française {
+        @include container__menu;
+      }
+    
+      &__la__note__enchantee {
+        @include container__menu;
+      }
+    
+      &__la__palette__du__gout {
+        @include container__menu;
+      }
+    
+      &__le__delice__des__sens {
+        @include container__menu;
+      }
+    }
+}

@@ -189,10 +189,10 @@
 @media screen and (min-width: 610px)
 {
   .btn__heart_accueil{
-   left: 50px;
+   left: 40px;
   }
   .btn__heart_à_la_française{
-    left: 90px;
+    left: 80px;
   }
 
   .titre_restaurant .btn__heart{
@@ -203,3 +203,14 @@
 
 }
 
+@media screen and (min-width: 880px){
+
+.btn__heart_accueil {
+    left: 190px;
+}
+
+.btn__heart_à_la_française {
+  left: 230px;
+}
+
+}
